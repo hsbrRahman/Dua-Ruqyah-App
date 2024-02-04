@@ -1,5 +1,6 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import Categories from "./components/Categories";
+import Dua from "./components/Dua";
 
 const Page = () => {
   return (
@@ -15,7 +16,14 @@ const Page = () => {
     //   </div>
     //   <h2 className="bg-white col-span-4">testing 4</h2>
     // </div>
-    <div className="bg-red-300  h-screen">test</div>
+    <div className="h-screen">
+      <div className="w-full flex flex-row h-full gap-4">
+        <Categories />
+        <div className="w-2/3">
+          <Dua />
+        </div>
+      </div>
+    </div>
   );
 };
 
